@@ -5,7 +5,7 @@ import {
   Truck,
   Power,
   Settings,
-  Tool,
+  Wrench,
   FileBarChart,
   ChevronLeft,
 } from 'lucide-react';
@@ -22,7 +22,7 @@ const Sidebar = ({ isCollapsed, onToggle }: SidebarProps) => {
     { icon: LayoutDashboard, label: 'Dashboard', active: false },
     { icon: Truck, label: 'Active Vehicles', active: true },
     { icon: Power, label: 'Inactive Vehicles', active: false },
-    { icon: Tool, label: 'Installations', active: false },
+    { icon: Wrench, label: 'Installations', active: false },
     { icon: FileBarChart, label: 'Reports', active: false },
     { icon: Settings, label: 'Settings', active: false },
   ];
