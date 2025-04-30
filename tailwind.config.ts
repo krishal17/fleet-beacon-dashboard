@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Telemko custom colors
+				telemko: {
+					blue: "#0EA5E9",
+					green: "#10B981",
+					yellow: "#F59E0B", 
+					red: "#EF4444",
+					dark: "#1A1F2C",
+					"dark-card": "#222222",
+					"dark-light": "#2D3748",
 				}
 			},
 			borderRadius: {
@@ -84,11 +95,25 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-light': {
+					'0%, 100%': {
+						opacity: '1'
+					},
+					'50%': {
+						opacity: '0.5'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-light': 'pulse-light 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+			},
+			boxShadow: {
+				'neomorph': '5px 5px 10px #151515, -5px -5px 10px #292929',
+				'neomorph-sm': '3px 3px 6px #151515, -3px -3px 6px #292929',
+				'neomorph-inset': 'inset 2px 2px 5px #151515, inset -2px -2px 5px #292929'
 			}
 		}
 	},
